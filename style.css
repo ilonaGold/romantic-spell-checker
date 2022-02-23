@@ -1,0 +1,79 @@
+:root {
+  --yellow: #fbf3ab;
+  --light-pink: #f0b9dd;
+  --deep-pink: #f04c86;
+  --raisin: #2b283a;
+  --white: #fff;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: var(--light-pink);
+  color: var(--raisin);
+  font-family: "Karla", sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 100vh;
+  min-width: 500px;
+  padding: 2em 3.5em;
+  background: var(--light-pink) url("valentine_cat.png") no-repeat center;
+  background-size: cover;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+h1 {
+  background: var(--light-pink);
+  padding: 0.7em;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+.paragraph {
+  background: var(--yellow);
+  color: var(--raisin);
+  min-width: 220px;
+  padding: 0.8em 0.1em;
+  text-align: center;
+  font-size: 1.5rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  border-radius: 5px;
+  margin-bottom: 6.5em;
+}
+
+button {
+  font-family: inherit;
+  font-size: 1.25rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  border-radius: 5px;
+  border: none;
+  padding: 1em 1.5em;
+  color: var(--white);
+  background: var(--deep-pink);
+  margin-bottom: 1.5em;
+}
+
+button:hover,
+button:focus {
+  transform: scale(1.02);
+  cursor: pointer;
+}
